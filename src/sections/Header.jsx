@@ -1,14 +1,29 @@
-import { useState } from "react";
-import NavLink from "./NavLink";
+import { useEffect, useState } from "react";
+import NavLink from "../components/NavLink";
 import { Link as LinkScroll } from "react-scroll";
 import clsx from "clsx";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 32 ? true : false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <header className="fixed top-0 left-0 z-50 w-full py-10">
+    <header
+      className={clsx(
+        "fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4",
+        hasScrolled && "py-2 bg-black-100 backdrop-blur-sm",
+      )}
+    >
       <div className="container flex h-14 items-center max-lg:px-5 justify-between">
-        <a className="lg:hidden z-2 cursor-pointer w-fit">
+        <a className="lg:hidden z-2 cursor-pointer w-fit" href="header">
           <img src="/images/xora.svg" alt="xora" width={115} height={55} />
         </a>
         <div
@@ -31,7 +46,9 @@ const Header = () => {
                     offset={-100}
                     spy
                     smooth
-                    className={clsx("max-lg:hidden")}
+                    className={clsx(
+                      "max-lg:hidden transition-transform duration-500 cursor-pointer",
+                    )}
                   >
                     <img
                       src="/images/xora.svg"
@@ -48,6 +65,22 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
+            <div className="lg:hidden block absolute top-1/2 left-0 w-960 h-380 -translate-x-72.5 -translate-y-1/2 rotate-90">
+              <img
+                src="/images/bg-outlines.svg"
+                alt="outlines"
+                width={960}
+                height={380}
+                className="relative z-2"
+              />
+              <img
+                src="/images/bg-outlines-fill.png"
+                alt="outlines"
+                width={960}
+                height={380}
+                className="absolute inset-0 mix-blend-soft-light opacity-5"
+              />
+            </div>
           </div>
         </div>
         <button
