@@ -18,8 +18,10 @@ const Header = () => {
   return (
     <header
       className={clsx(
-        "fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4",
-        hasScrolled && "py-2 bg-black-100 backdrop-blur-sm",
+        "fixed top-0 left-0 z-50 w-full transition-all duration-500",
+        hasScrolled
+          ? "py-2 bg-black-100 backdrop-blur-sm"
+          : "py-10 max-lg:py-4",
       )}
     >
       <div className="container flex h-14 items-center max-lg:px-5 justify-between">
@@ -43,7 +45,7 @@ const Header = () => {
                 <li className="nav-logo">
                   <LinkScroll
                     to="hero"
-                    offset={-100}
+                    offset={-250}
                     spy
                     smooth
                     className={clsx(
