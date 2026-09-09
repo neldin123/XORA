@@ -8,7 +8,7 @@ const Header = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      setHasScrolled(window.scrollY > 32 ? true : false);
+      setHasScrolled(window.scrollY > 32);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -38,9 +38,9 @@ const Header = () => {
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="nav-li">
-                  <NavLink title="features" />
+                  <NavLink title="features" setIsOpen={setIsOpen} />
                   <div className="dot" />
-                  <NavLink title="pricing" />
+                  <NavLink title="pricing" setIsOpen={setIsOpen} />
                 </li>
                 <li className="nav-logo">
                   <LinkScroll
@@ -61,9 +61,9 @@ const Header = () => {
                   </LinkScroll>
                 </li>
                 <li className="nav-li">
-                  <NavLink title="faq" />
+                  <NavLink title="faq" setIsOpen={setIsOpen} />
                   <div className="dot" />
-                  <NavLink title="download" />
+                  <NavLink title="download" setIsOpen={setIsOpen} />
                 </li>
               </ul>
             </nav>
