@@ -15,6 +15,7 @@ const TestimonialItem = ({ item, containerClassName }) => {
             src={item.avatarUrl}
             alt={item.name}
             className="size-full object-cover"
+            loading="lazy"
           />
         </div>
         <div className="">

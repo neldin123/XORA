@@ -26,6 +26,7 @@ const Hero = () => {
               src="/images/hero.png"
               alt="hero"
               className="size-1230 max-lg:h-auto"
+              loading="lazy"
             />
           </div>
         </div>

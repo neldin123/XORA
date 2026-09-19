@@ -47,6 +47,7 @@ const Pricing = () => {
                 width={960}
                 height={380}
                 className="relative z-2"
+                loading="lazy"
               />
               <img
                 src="/images/bg-outlines-fill.png"
@@ -54,6 +55,7 @@ const Pricing = () => {
                 width={960}
                 height={380}
                 className="absolute inset-0 opacity-5 mix-blend-soft-light"
+                loading="lazy"
               />
             </div>
           </div>
@@ -129,6 +131,7 @@ const Pricing = () => {
                         src="/images/check.png"
                         alt="feature"
                         className="size-10 object-contain"
+                        loading="lazy"
                       />
                       <p className="flex-1">{feature}</p>
                     </li>

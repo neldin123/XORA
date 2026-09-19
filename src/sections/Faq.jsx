@@ -25,6 +25,7 @@ const Faq = () => {
                 src="/images/faq-logo.svg"
                 alt="faq-logo"
                 className="size-1/2"
+                loading="lazy"
               />
             </div>
             <div className="relative flex-1 pt-24 ">
