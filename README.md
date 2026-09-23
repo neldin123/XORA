@@ -1,18 +1,82 @@
-# React + Vite
+# XORA 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive landing page built with **React** and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+This project was created to practice React concepts and apply them in a real-world frontend project, with a focus on reusable components, responsive design, animations, and interactive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Links
 
-## React Compiler
+* **GitHub Repository:** [neldin123/XORA](https://github.com/neldin123/XORA)
+* **Live Demo:** Coming Soon
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠️ Tech Stack
 
-Note: This will impact Vite dev & build performances.
+* **React**
+* **JavaScript**
+* **Tailwind CSS**
+* **Vite**
+* **React Scroll**
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 📱 Fully responsive design
+* 🧩 Reusable React components
+* 🎨 Modern and clean UI
+* ✨ Smooth animations and interactions
+* 🔢 Animated statistics
+* 📜 Smooth scrolling navigation
+* 📐 Responsive layout for different screen sizes
+
+## 📚 What I Practiced
+
+This project helped me put the React concepts I learned into practice.
+
+I worked on:
+
+* Building reusable React components
+* Using React Hooks
+* Managing component state
+* Creating responsive layouts
+* Structuring a React project
+* Working with third-party React libraries
+* Creating interactive UI elements
+* Improving the overall user experience
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/neldin123/XORA.git
+```
+
+### Install dependencies
+
+```bash
+cd XORA
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+## 🙏 Credits
+
+The project was inspired by the **XORA** project/tutorial from **JavaScript Mastery**.
+
+This implementation was created for learning and practice purposes.
+
+## 👨‍💻 Author
+
+**Noureldin**
+
+GitHub: [@neldin123](https://github.com/neldin123)
